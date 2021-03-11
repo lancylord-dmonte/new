@@ -1,0 +1,60 @@
+*{
+	box-sizing: border-box;
+}
+
+
+
+.foot
+{
+	background-color: #2E2E45;
+}
+#map-tile
+{
+overflow:hidden;
+width:100%;
+height:500px;
+margin: 30px;
+margin-top:60px;
+}
+
+#map-tile:hover{
+	box-shadow: 0 1px 5px 1px #cccccc;
+}
+#map-tile span{
+	position: absolute;
+	bottom:30px;
+
+	left: 47px;
+	width:96%;
+	text-align: center;
+	font-size: 1.6em;
+	background-color: #000;
+	color: #fff;
+	opacity:0.8;
+}
+
+
+.form{
+	margin: 50px;
+}
+
+label
+{
+	color: white;
+}
+
+#contact{margin-top: 60px;
+	margin-left:40px; 
+	font-size: 2em;
+	font-weight: bold;
+	color: white;
+}
+#address{
+	color: white;
+	font-size: 20px;
+	margin-top: 20px;
+	padding: 20px;
+}
+
+
+/* floating*/
