@@ -1,13 +1,4 @@
-<?php
-if(isset($_POST('submit'))){
-$to = "lancydmonte@gmail.com";
-$sub = $_POST['subject'];
-$txt =$_POST['message'];
-$headers = $_POST['email'];
 
-echo "done";
-}
-?>
 
 
 <!DOCTYPE html>
@@ -128,4 +119,13 @@ echo "done";
 
 </body>
 </html>
+<?php
+if(isset($_POST('submit'))){
+$to = "lancydmonte@gmail.com";
+$sub = $_POST['subject'];
+$txt =$_POST['message'];
+$headers = $_POST['email'];
 
+echo "done";
+}
+?>
