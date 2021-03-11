@@ -1,5 +1,5 @@
 <?php
-$to = "host emailid";
+$to = "lancydmonte@gmail.com";
 $sub = $_POST['subject'];
 $txt =$_POST['message'];
 $headers = $_POST['email'];
