@@ -67,7 +67,7 @@
 
 
 		<div class="form" >
-			<form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
+			<form action="<?php echo $_SERVER['PHP_SELF'];?>" method="get">
 			<div class="form-group">
 		    <label>Name</label>
 		    <input type="text" class="form-control" id="exampleInputEmail1" name="name" aria-describedby="emailHelp" placeholder="Enter Name" required>
@@ -118,11 +118,11 @@
 </html>
 
 <?php
-if(isset($_POST('submit'))){
+if(isset($_GET('submit'))){
 $to = "lancydmonte@gmail.com";
-$sub = $_POST['subject'];
-$txt =$_POST['message'];
-$headers = $_POST['email'];
+$sub = $_GET['subject'];
+$txt =$_GET['message'];
+$headers = $_GET['email'];
 
 mail($to,$sub,$txt,$headers);
 echo "done";
