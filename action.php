@@ -1,12 +1,14 @@
 <html><body>
 
 <?php
-$to = "lancydmonte@gmail.com";
+ if($isset($_POST['submit']))
+ {$to = "lancydmonte@gmail.com";
 $sub = $_POST['subject'];
 $txt =$_POST['message'];
 $headers = $_POST['email'];
+ }
 
-mail($to,$sub,$txt,$headers);
 echo "done";
+ echo $to+$sub+$txt;
 ?>
   </body></html>
